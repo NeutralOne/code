@@ -1,9 +1,9 @@
 test:
-	override:
-		- grep 'Healthy' index.html
+  override:
+    - grep 'Healthy' index.html
 
 deployment:	
-	production:
-		branch: master
-			commands:
-			 - ssh deploy@52.24.32.235 "cd /opt/deploy/testrepo; git pull origin master"
+  production:
+    branch: master
+	  commands:
+	    - ssh deploy@52.24.32.235 "cd /opt/deploy/testrepo; git pull origin master"
