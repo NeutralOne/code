@@ -6,4 +6,4 @@ deployment:
   production:
     branch: master
     commands:
-      - ssh deploy@52.24.32.235 "cd /opt/deploy/testrepo; git pull origin master"
+      - ssh deploy@52.24.32.235 "cd /opt/deploy/code; git pull origin master"
